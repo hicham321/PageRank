@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class PowerIteration  {
 	
-	//number of webpages (nodes) in the web graph 
+	//number of web pages (nodes) in the web graph 
 	private int nodesNumber ;
-	//matrix of the graph 
+	//Adjacency matrix of the graph 
 	private double[][] mat = new double[nodesNumber][nodesNumber];
 	//vector of page rank scores 
 	private double [] PageRankVector = new double [this.nodesNumber] ;
@@ -21,6 +21,8 @@ public class PowerIteration  {
 		for(int i =0 ;i< this.nodesNumber ;i++){
 			for(int j=0 ; j<this.nodesNumber;j++){
 		          System.out.println("enter the element of row"+ " " +i+" " + "and column"+" "+j);
+		          double k = sc.nextDouble();
+		          this.mat[i][j]=k; 
 		          
 		    }
 		}
