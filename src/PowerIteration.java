@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 
 public class PowerIteration  {
 	
@@ -9,13 +11,32 @@ public class PowerIteration  {
 	private double [] PageRankVector = new double [this.nodesNumber] ;
 	
 	
+	Scanner sc = new Scanner(System.in);
+	
+	// method for entering the graph matrix :
+	
+	private void data(){
+		System.out.println("enter the number of nodes :");
+		this.nodesNumber=sc.nextInt();
+		for(int i =0 ;i< this.nodesNumber ;i++){
+			for(int j=0 ; j<this.nodesNumber;j++){
+		          System.out.println("enter the element of row"+ " " +i+" " + "and column"+" "+j);
+		          
+		    }
+		}
+	}
 	
 	
+	
+	//method for verifying if the graph contains a spider trap or a dead end
+	private void verify (){
+		
+		
+	} 
 	// method for calculating the product of the vector with the matrix R= Matrix *R
-	
 	private  double[] product(){
-	    
-		return ;
+	    double [] s= new double [10];
+		return s ;
 	}
 	
 	
